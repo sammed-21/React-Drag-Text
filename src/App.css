@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.main{
+  overflow-y: hidden;
+}
+.section{
+  display: flex;
+  position: relative;
+overflow-x: hidden;
+  width: 100%;
+  background-color: rgb(210, 201, 201);
+  height: 100vh;
+  flex-direction:column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.imgs > img{
+  width: 100%;
+background-origin: border-box;
+ 
+overflow: hidden;
+  height: 100vh;
+  /* object-fit: contain; */
+  object-fit:fill;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+ 
+.btn1{
+  position: absolute;
+  bottom: 10px;
+  
+  /* padding:10px 20px; */
+  background-color: blue;
+  color: white;
+  justify-content: center;
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 20px;
+  max-width: 16rem;
+  
+}
+.btn{
+  padding:10px 20px;
+  position: absolute;
+  right:10vw;
+  bottom: 10px;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 20px;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.inputs{
+    background:transparent;
+    color:white;
+    font-size:49px;
+    position: absolute;
+    top: 50%;
+    font-weight:bold;
+    border:none;
+    max-width: 10rem;
+    resize: both;
+    width:fit-content;
+}
+ 
+@media screen and (max-width: 768px) {
+  .section{
+    /* background-color:red; */
+    overflow-x: hidden;
+  }
+  .imgs > img{
+    width: 40%;
+
+
+  }
+  .btn ,.btn1 {
+    max-width: 7rem;
+    /* padding:10px 14px; */
+    background-color: black;
+    font-size: 13px;
+
+  }
+  
+}
