@@ -72,6 +72,12 @@ overflow: hidden;
     transform: rotate(360deg);
   }
 }
+ .inputs:focus-visible{
+  outline: none;
+ }
+.text-overlay{
+  max-width: fit-content;
+}
 .inputs{
     background:transparent;
     color:white;
@@ -80,9 +86,10 @@ overflow: hidden;
     top: 50%;
     font-weight:bold;
     border:none;
-    max-width: 10rem;
+    min-width:fit-content;
+    border-color: transparent;
     resize: both;
-    width:fit-content;
+   ;
 }
  
 @media screen and (max-width: 768px) {
